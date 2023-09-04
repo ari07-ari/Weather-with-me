@@ -77,14 +77,15 @@ function fetch_weather (userCity){
         var present = document.querySelector('#present');
         var currentlist = document.createElement('ul');
 
+        var now = dayjs().format("YYYY-MM-DD");
 
         
         if ( (0 <=data.clouds.all) && (data.clouds.all <= 45)){
-            nameCity.textContent= userCity+ " ☀️";
+            nameCity.textContent= userCity+ " "+now + " ☀️";
             
             }
             else{
-            nameCity.textContent= userCity+ " ☁️";
+            nameCity.textContent= userCity+ " "+now +" ☁️";
             
             }
 
@@ -137,10 +138,14 @@ function fetch_weather (userCity){
                 var card = document.createElement('ul')
                 var header = document.createElement('h4');
                 var icon = document.createElement('h5');
-
-                header.textContent = forecast[index].dt_txt;
+                
+                
+                //It displays the date of the future 5 days
+                var parts= forecast[index].dt_txt.split(' ');
+                header.textContent = parts[0];
                 card.append(header);
-
+                
+                //it displays if the weather is sunny or cloudy.
                 if ( (0 <=forecast[index].clouds.all) && (forecast[index].clouds.all <= 45)){
                 icon.textContent = "☀️"
                 card.append(icon);
@@ -150,7 +155,7 @@ function fetch_weather (userCity){
                 card.append(icon);
                 }
 
-
+                
                 var daystemp = forecast[index].main.temp;
                 var daywind = forecast[index].wind.speed;
                 var dayhum = forecast[index].main.humidity;
@@ -170,7 +175,8 @@ function fetch_weather (userCity){
                 
                 forecast_container.append(card);
                 
-            }
+            
+        }
             
         }
 
