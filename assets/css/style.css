@@ -1,0 +1,102 @@
+.body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap; 
+    margin: 10px;
+
+}
+
+.title{
+    text-align: center;
+    flex-direction: wrap;
+    background-color: darkblue;
+    padding: 10px;
+    color: white;
+}
+
+h3{
+    font-weight: 600;
+}
+
+button{
+    padding: 5px;
+    margin: 5px ;
+    border: 2px;
+    color: white;
+    background-color: rgb(72, 165, 134);
+}
+
+.searchbox{
+    text-align: center;
+    flex-direction:column;
+    margin: 0 30px 0px 30px;
+    padding: 0 30px 30px 30px;
+    border-style: solid;
+    border-color: black;
+    align-items: left;
+}
+
+
+.showbox{
+    
+    /* text-align: center; */
+    flex-direction:column;
+    margin: 0 30px 0px 30px;
+    padding: 0 30px 30px 30px;
+    border-style: solid;
+    border-color: black;
+    align-items: center;
+}
+
+.searchbox,
+.showbox{
+    display: inline;
+    margin-bottom: 10px;
+}
+
+
+.showboxtwo{
+    
+    /* text-align: center; */
+    flex-direction:column;
+    margin: 0 30px 0px 30px;
+    padding: 0 30px 30px 30px;
+    border-style: solid;
+    border-color: black;
+    align-items: center;
+ 
+}
+
+.showbox,
+.showboxtwo{
+    display: block;
+}
+
+#location-filter,
+#search{
+    display: block;
+}
+
+#fivedays{
+    color: white;
+    background-color: darkblue;
+    display: flex;
+    
+}
+
+li{
+    margin: 10px;
+}
+
+ul{
+    border-style: solid;
+    border-color:white;
+    margin-bottom: 0px;
+    border-width: 500;
+    list-style: none;
+}
