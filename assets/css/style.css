@@ -1,9 +1,12 @@
+
+/* the body of the html will have the following font */
 .body{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: normal;
 
 }
 
+/* The main will flex and wrap and have margin */
 main{
     display: flex;
     flex-wrap: wrap; 
@@ -11,6 +14,7 @@ main{
 
 }
 
+/* The title will have the following features */
 .title{
     text-align: center;
     flex-direction: wrap;
@@ -19,10 +23,12 @@ main{
     color: white;
 }
 
+/* font weight for all headers 3 */
 h3{
     font-weight: 600;
 }
 
+/* the buttons will have the following features */
 button{
     padding: 5px;
     margin: 5px ;
@@ -31,6 +37,7 @@ button{
     background-color: rgb(72, 165, 134);
 }
 
+/* the search section will be placed in the following */
 .searchbox{
     text-align: center;
     flex-direction:column;
@@ -41,7 +48,7 @@ button{
     align-items: left;
 }
 
-
+/* the current weather box will have fex and the following styles */
 .showbox{
     
     /* text-align: center; */
@@ -53,13 +60,14 @@ button{
     align-items: center;
 }
 
+/* both classes will be inline */
 .searchbox,
 .showbox{
     display: inline;
     margin-bottom: 10px;
 }
 
-
+/* the 5-day forecast box will have flex and the following features */
 .showboxtwo{
     
     /* text-align: center; */
@@ -72,16 +80,13 @@ button{
  
 }
 
+/* these classes are being displayed in a block */
 .showbox,
 .showboxtwo{
     display: block;
 }
 
-#location-filter,
-#search{
-    display: block;
-}
-
+/* the div id fivedays will have white font and other features */
 #fivedays{
     color: white;
     background-color: darkblue;
@@ -89,10 +94,12 @@ button{
     
 }
 
+/* the lists will have a margin */
 li{
     margin: 10px;
 }
 
+/* the ul sections will have border style and color as well as other features */
 ul{
     border-style: solid;
     border-color:white;
