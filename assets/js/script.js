@@ -1,6 +1,6 @@
 const apiKey= "fa7d8544b472293402a15429257396ed"; //API key from OpenWeather
 var userCity = ""; //the user's input city preference
-var latlong = "http://api.openweathermap.org/geo/1.0/direct?q=" + userCity +"&limit=5&appid=" + apiKey; //the link that accepts city input to give lat and long values.
+var latlong = "https://api.openweathermap.org/geo/1.0/direct?q=" + userCity +"&limit=5&appid=" + apiKey; //the link that accepts city input to give lat and long values.
 var lat = ""  //this brings the lat from latlong link
 var long= ""  //this brings the long from latlong link, and we can sub to the weather url
 var weatherURL = "https://api.openweathermap.org/data/2.5/forecast?lat="+lat+"&lon="+long+"&appid="+apiKey; //all the elements will create the link with the right weather
@@ -28,7 +28,7 @@ function fetch_weather (userCity){
     forecast_container.innerHTML="";
     present.innerHTML="";
 
-    var latlong = "http://api.openweathermap.org/geo/1.0/direct?q=" + userCity +"&limit=5&appid=" + apiKey;//the link that accepts city input to give lat and long values.
+    var latlong = "https://api.openweathermap.org/geo/1.0/direct?q=" + userCity +"&limit=5&appid=" + apiKey;//the link that accepts city input to give lat and long values.
     var lat = ""  //this brings the lat from latlong link
     var long= ""  //this brings the long from latlong link, and we can sub to the weather url
     
